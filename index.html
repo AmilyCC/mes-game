@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>My LIFF</title>
+</head>
+
+<body>
+  <div class="wrap">
+    <button id="btnShare" onclick="sendShare_Gift()"
+      style="display: none;margin: 20px auto;padding: 20px;">Gift</button>
+    <button id="btnShare2" onclick="sendShare_Ladder()"
+      style="display: none;margin: 20px auto;padding: 20px;">Ladder</button>
+    <button id="btnShare3" onclick="sendShare_Pay()" style="display: none;margin: 20px auto;padding: 20px;">Pay</button>
+    <button id="btnShare4" onclick="Red_Env()" style="display: none;margin: 20px auto;padding: 20px;">Red Env</button>
+    <button id="btnLogin" onclick="liff.login()" style="display: none;margin: 20px auto;padding: 20px;">Log In</button>
+    <button id="btnLogOut" onclick="logOut()" style="display: none;margin: 20px auto;padding: 20px;">Log Out</button>
+  </div>
+
+  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+  <script src="./style/main.js"></script>
+</body>
+
+</html>
