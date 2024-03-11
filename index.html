@@ -11,11 +11,12 @@
 
 <body>
   <div class="m-auto wrap">
-    <div class="form-label-group" id="sendForm" style="display: none;">
+    <div class="p-3 form-label-group" id="sendForm" style="display: none;">
       <select class="p-3 my-3 mx-auto form-select custom-select d-block w-80" id="type" onchange="changeType()" required>
         <option value="choose" disable hidden selected>選擇消息類型</option>
         <option value="text">文字</option>
         <option value="image">圖片</option>
+        <div class="form-label-group" id="data"><input type="text" id="text" class="form-control" placeholder="Text message" required></div>
       </select>
     </div>
     <button class="btn btn-outline-primary" id="btnShare" onclick="sendShare_Gift()"
@@ -32,6 +33,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
   <script src="./style/main.js"></script>
+  <script src="./style/send.js"></script>
 </body>
 
 </html>
