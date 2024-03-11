@@ -560,6 +560,7 @@ async function sendShare_Gift() {
 		async function main() {
 			await liff.init({ liffId: LIFF_ID })
 			if (liff.isLoggedIn()) {
+        document.getElementById("sendForm").style.display = "block"
 				document.getElementById("btnShare").style.display = "block"
 				document.getElementById("btnShare2").style.display = "block"
 				document.getElementById("btnShare3").style.display = "block"
