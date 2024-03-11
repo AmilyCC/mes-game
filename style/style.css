@@ -5,7 +5,10 @@ body{
 .wrap {
   display: flex;
   flex-direction: column;
+  max-width: 780px;
+  width: 100%;
 }
+
 button {
   width: 50%;
   height: 10%;
