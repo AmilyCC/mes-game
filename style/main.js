@@ -21,7 +21,7 @@ async function sendShare_Gift() {
 							"action": {
 								"type": "uri",
 								"label": "action",
-								"uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"
+								"uri": "https://liff.line.me/2003958153-OL85ylYd?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"
 							},
 							"offsetTop": "none",
 							"offsetBottom": "none",
@@ -37,7 +37,7 @@ async function sendShare_Gift() {
 							"action": {
 								"type": "uri",
 								"label": "action",
-								"uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"
+								"uri": "https://liff.line.me/2003958153-OL85ylYd?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"
 							},
 							"contents": [
 								{
@@ -50,7 +50,7 @@ async function sendShare_Gift() {
 									"action": {
 										"type": "uri",
 										"label": "action",
-										"uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"
+										"uri": "https://liff.line.me/2003958153-OL85ylYd?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"
 									},
 									"offsetStart": "none",
 									"position": "relative",
@@ -73,7 +73,7 @@ async function sendShare_Gift() {
 									"action": {
 										"type": "uri",
 										"label": "action",
-										"uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"
+										"uri": "https://liff.line.me/2003958153-OL85ylYd?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"
 									},
 									"position": "relative"
 								}
@@ -96,7 +96,7 @@ async function sendShare_Gift() {
 									"action": {
 										"type": "uri",
 										"label": "打開我的禮物",
-										"uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"
+										"uri": "https://liff.line.me/2003958153-OL85ylYd?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"
 									},
 									"style": "secondary"
 								},
@@ -105,7 +105,7 @@ async function sendShare_Gift() {
 									"action": {
 										"type": "uri",
 										"label": "傳送感謝小卡",
-										"uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"
+										"uri": "https://liff.line.me/2003958153-OL85ylYd?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"
 									}
 								},
 								{
@@ -120,7 +120,7 @@ async function sendShare_Gift() {
 											"action": {
 												"type": "uri",
 												"label": "LINE禮物",
-												"uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"
+												"uri": "https://liff.line.me/2003958153-OL85ylYd?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"
 											},
 											"position": "relative",
 											"margin": "none",
@@ -134,7 +134,7 @@ async function sendShare_Gift() {
 									"action": {
 										"type": "uri",
 										"label": "action",
-										"uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"
+										"uri": "https://liff.line.me/2003958153-OL85ylYd?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"
 									}
 								}
 							]
@@ -180,7 +180,7 @@ async function sendShare_Gift() {
 							"aspectMode": "cover",
 							"action": {
 								"type": "uri",
-								"uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E7%A5%9D%E5%A4%A7%E5%AE%B6520%E5%BF%AB%E6%A8%82%21"
+								"uri": "https://liff.line.me/2003958153-OL85ylYd?auto=yes&type=text&text=%E7%A5%9D%E5%A4%A7%E5%AE%B6520%E5%BF%AB%E6%A8%82%21"
 							}
 						},
 						"body": {
@@ -217,7 +217,7 @@ async function sendShare_Gift() {
 							"action": {
 								"type": "uri",
 								"label": "action",
-								"uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E7%A5%9D%E5%A4%A7%E5%AE%B6520%E5%BF%AB%E6%A8%82%21"
+								"uri": "https://liff.line.me/2003958153-OL85ylYd?auto=yes&type=text&text=%E7%A5%9D%E5%A4%A7%E5%AE%B6520%E5%BF%AB%E6%A8%82%21"
 							}
 						},
 						"footer": {
@@ -236,7 +236,7 @@ async function sendShare_Gift() {
 									"action": {
 										"type": "uri",
 										"label": "開啟爬梯子遊戲",
-										"uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=image&downloadUrl=https://i.imgur.com/vASFvRY.jpg&previewUrl=https://i.imgur.com/vASFvRY.jpg"
+										"uri": "https://liff.line.me/2003958153-OL85ylYd?auto=yes&type=image&downloadUrl=https://i.imgur.com/vASFvRY.jpg&previewUrl=https://i.imgur.com/vASFvRY.jpg"
 									}
 								},
 								{
@@ -246,7 +246,7 @@ async function sendShare_Gift() {
 									"action": {
 										"type": "uri",
 										"label": "查看全部結果",
-										"uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=image&downloadUrl=https://i.imgur.com/ymZGzJT.jpg&previewUrl=https://i.imgur.com/ymZGzJT.jpg"
+										"uri": "https://liff.line.me/2003958153-OL85ylYd?auto=yes&type=image&downloadUrl=https://i.imgur.com/ymZGzJT.jpg&previewUrl=https://i.imgur.com/ymZGzJT.jpg"
 									}
 								},
 								{
@@ -303,7 +303,7 @@ async function sendShare_Gift() {
 							"aspectMode": "cover",
 							"action": {
 							  "type": "uri",
-							  "uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%88%91%E8%B6%85%E7%AC%A8%20%E6%B4%BB%E8%A9%B2%E8%A2%AB%E9%A8%99"
+							  "uri": "https://liff.line.me/2003958153-OL85ylYd?auto=yes&type=text&text=%E6%88%91%E8%B6%85%E7%AC%A8%20%E6%B4%BB%E8%A9%B2%E8%A2%AB%E9%A8%99"
 							},
 							"position": "relative"
 						  },
@@ -319,7 +319,7 @@ async function sendShare_Gift() {
 								"action": {
 								  "type": "uri",
 								  "label": "action",
-								  "uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%88%91%E8%B6%85%E7%AC%A8%20%E6%B4%BB%E8%A9%B2%E8%A2%AB%E9%A8%99"
+								  "uri": "https://liff.line.me/2003958153-OL85ylYd?auto=yes&type=text&text=%E6%88%91%E8%B6%85%E7%AC%A8%20%E6%B4%BB%E8%A9%B2%E8%A2%AB%E9%A8%99"
 								}
 							  },
 							  {
@@ -331,7 +331,7 @@ async function sendShare_Gift() {
 								"action": {
 								  "type": "uri",
 								  "label": "action",
-								  "uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=image&downloadUrl=https://i.imgur.com/ait6uEi.jpg&previewUrl=https://i.imgur.com/ait6uEi.jpg"
+								  "uri": "https://liff.line.me/2003958153-OL85ylYd?auto=yes&type=image&downloadUrl=https://i.imgur.com/ait6uEi.jpg&previewUrl=https://i.imgur.com/ait6uEi.jpg"
 								}
 							  },
 							  {
@@ -344,7 +344,7 @@ async function sendShare_Gift() {
 								"action": {
 								  "type": "uri",
 								  "label": "瞭解更多",
-								  "uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E5%80%92%E6%AD%A4%E4%B8%80%E6%B2%B9"
+								  "uri": "https://liff.line.me/2003958153-OL85ylYd?auto=yes&type=text&text=%E5%80%92%E6%AD%A4%E4%B8%80%E6%B2%B9"
 								},
 								"scaling": true,
 								"offsetEnd": "none"
@@ -353,7 +353,7 @@ async function sendShare_Gift() {
 							"action": {
 							  "type": "uri",
 							  "label": "action",
-							  "uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%88%91%E8%B6%85%E7%AC%A8%20%E6%B4%BB%E8%A9%B2%E8%A2%AB%E9%A8%99"
+							  "uri": "https://liff.line.me/2003958153-OL85ylYd?auto=yes&type=text&text=%E6%88%91%E8%B6%85%E7%AC%A8%20%E6%B4%BB%E8%A9%B2%E8%A2%AB%E9%A8%99"
 							}
 						  },
 						  "footer": {
@@ -386,7 +386,7 @@ async function sendShare_Gift() {
 							"action": {
 							  "type": "uri",
 							  "label": "action",
-							  "uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%88%91%E8%B6%85%E7%AC%A8%20%E6%B4%BB%E8%A9%B2%E8%A2%AB%E9%A8%99"
+							  "uri": "https://liff.line.me/2003958153-OL85ylYd?auto=yes&type=text&text=%E6%88%91%E8%B6%85%E7%AC%A8%20%E6%B4%BB%E8%A9%B2%E8%A2%AB%E9%A8%99"
 							},
 							"position": "relative"
 						  },
@@ -437,7 +437,7 @@ async function sendShare_Gift() {
 							"action": {
 							  "type": "uri",
 							  "label": "action",
-							  "uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%8C%89%E7%9A%84%E9%BE%8D%E5%96%9C%E5%8C%97%E4%B8%83"
+							  "uri": "https://liff.line.me/2003958153-OL85ylYd?auto=yes&type=text&text=%E6%8C%89%E7%9A%84%E9%BE%8D%E5%96%9C%E5%8C%97%E4%B8%83"
 							}
 						  },
 						  "body": {
@@ -453,7 +453,7 @@ async function sendShare_Gift() {
 								"action": {
 								  "type": "uri",
 								  "label": "action",
-								  "uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%8C%89%E7%9A%84%E9%BE%8D%E5%96%9C%E5%8C%97%E4%B8%83"
+								  "uri": "https://liff.line.me/2003958153-OL85ylYd?auto=yes&type=text&text=%E6%8C%89%E7%9A%84%E9%BE%8D%E5%96%9C%E5%8C%97%E4%B8%83"
 								}
 							  },
 							  {
@@ -465,7 +465,7 @@ async function sendShare_Gift() {
 								"action": {
 								  "type": "uri",
 								  "label": "action",
-								  "uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%8C%89%E7%9A%84%E9%BE%8D%E5%96%9C%E5%8C%97%E4%B8%83"
+								  "uri": "https://liff.line.me/2003958153-OL85ylYd?auto=yes&type=text&text=%E6%8C%89%E7%9A%84%E9%BE%8D%E5%96%9C%E5%8C%97%E4%B8%83"
 								}
 							  }
 							]
@@ -484,7 +484,7 @@ async function sendShare_Gift() {
 								"action": {
 								  "type": "uri",
 								  "label": "查看紅包狀態",
-								  "uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%8C%89%E7%9A%84%E9%BE%8D%E5%96%9C%E5%8C%97%E4%B8%83"
+								  "uri": "https://liff.line.me/2003958153-OL85ylYd?auto=yes&type=text&text=%E6%8C%89%E7%9A%84%E9%BE%8D%E5%96%9C%E5%8C%97%E4%B8%83"
 								},
 								"margin": "none"
 							  },
