@@ -2,6 +2,10 @@ let nowType = function sendType(){
     let type = document.getElementById('type').value
     return type 
 }
+let nowInput = function nowInput(){
+    let input = document.getElementById('userInput').value
+    return input
+}
 
 function changeType() {
     initContent(nowType);
@@ -24,7 +28,7 @@ function initContent(type) {
 
 
 function InputExist(){
-    let input = document.getElementById('userInput').value
+    
     if((sendType() == 'choose') && input == ''){
         alert('選擇傳送訊息類型');
         return false;
@@ -45,12 +49,14 @@ function InputExist(){
         return true;
     }
 }
-
+let convertInput = function trimConvert(){
+    let utf8EncodedText = encodeURIComponent(nowInput);
+    return utf8EncodedText
+}
 function sendInput(){
-    let input = document.getElementById('userInput').value
     if (sendType() == 'text'){
-        return `text=${input}`
+        return `text=${convertInput}`
     }else{
-        return `downloadUrl=${input}&previewUrl=${input}`
+        return `downloadUrl=${nowInput}&previewUrl=${nowInput}`
     }
 }
