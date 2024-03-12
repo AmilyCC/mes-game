@@ -1,6 +1,10 @@
-function changeType() {
+let nowType = function sendType(){
     let type = document.getElementById('type').value
-    initContent(type);
+    return type 
+}
+
+function changeType() {
+    initContent(nowType);
 }
 
 function initContent(type) {
@@ -13,24 +17,21 @@ function initContent(type) {
         userInput.type = 'text'
     } else{
         imageLink.style.display = "block"
-        userInput.placeholder = '輸入圖片網址'
+        userInput.placeholder = '輸入欲傳送圖片網址'
         userInput.type = 'url'
     } 
 }
 
-function sendtype(){
-    let type = document.getElementById('type').value
-    return type 
-}
+
 function InputExist(){
     let input = document.getElementById('userInput').value
-    if((sendtype() == 'text') && input == ''){
+    if((sendType() == 'choose') && input == ''){
         alert('選擇傳送訊息類型');
         return false;
-    }else if((sendtype() == 'choose') && input == ''){
-        alert('請輸入文字')
+    }else if((sendType() == 'text') && input == ''){
+        alert('請輸入文字訊息')
         return false;
-    }else if(sendtype() == 'image'){
+    }else if(sendType() == 'image'){
         const images = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg', '.webp'];
         const lowerIuput = input.toLowerCase();
         for (let image of images) {
@@ -47,7 +48,7 @@ function InputExist(){
 
 function sendInput(){
     let input = document.getElementById('userInput').value
-    if (sendtype() == 'text'){
+    if (sendType() == 'text'){
         return `text=${input}`
     }else{
         return `downloadUrl=${input}&previewUrl=${input}`
