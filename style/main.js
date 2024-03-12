@@ -24,7 +24,7 @@ async function sendShare_Gift() {
 						"action": {
 							"type": "uri",
 							"label": "action",
-							"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C`
+							"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
 						},
 						"offsetTop": "none",
 						"offsetBottom": "none",
