@@ -9,143 +9,144 @@ async function sendShare_Gift() {
 	}).catch((err) => {
 		return err;
 	});
-	const result = await liff.shareTargetPicker([
-		{
-			"type": "flex",
-			"altText": name + "送禮物來囉!",
-			"contents": {
-				"type": "bubble",
-				"size": "kilo",
-				"hero": {
-					"type": "image",
-					"url": "https://raw.githubusercontent.com/AmilyCC/imageStore/master/gift-banner.png",
-					"size": "full",
-					"aspectRatio": "18:19",
-					"action": {
-						"type": "uri",
-						"label": "action",
-						"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendtype()}&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C`
-					},
-					"offsetTop": "none",
-					"offsetBottom": "none",
-					"offsetStart": "none",
-					"margin": "none",
-					"align": "center",
-					"aspectMode": "cover"
-				},
-				"body": {
-					"type": "box",
-					"layout": "horizontal",
-					"spacing": "none",
-					"action": {
-						"type": "uri",
-						"label": "action",
-						"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendtype()}&${sendInput()}`
-					},
-					"contents": [
-						{
-							"type": "image",
-							"url": "https://raw.githubusercontent.com/AmilyCC/imageStore/master/starbucks.jpg",
-							"align": "start",
-							"size": "md",
-							"offsetTop": "none",
-							"offsetBottom": "none",
-							"action": {
-								"type": "uri",
-								"label": "action",
-								"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendtype()}&${sendInput()}`
-							},
-							"offsetStart": "none",
-							"position": "relative",
-							"offsetEnd": "none"
+	if (sent){
+		const result = await liff.shareTargetPicker([
+			{
+				"type": "flex",
+				"altText": name + "送禮物來囉!",
+				"contents": {
+					"type": "bubble",
+					"size": "kilo",
+					"hero": {
+						"type": "image",
+						"url": "https://raw.githubusercontent.com/AmilyCC/imageStore/master/gift-banner.png",
+						"size": "full",
+						"aspectRatio": "18:19",
+						"action": {
+							"type": "uri",
+							"label": "action",
+							"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendtype()}&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C`
 						},
-						{
-							"type": "text",
-							"text": "【星巴克】致敬女神組合",
-							"size": "md",
-							"weight": "bold",
-							"margin": "none",
-							"align": "start",
-							"offsetTop": "xxl",
-							"contents": [],
-							"style": "normal",
-							"offsetEnd": "none",
-							"wrap": true,
-							"offsetBottom": "none",
-							"offsetStart": "none",
-							"action": {
-								"type": "uri",
-								"label": "action",
-								"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendtype()}&${sendInput()}`
-							},
-							"position": "relative"
-						}
-					],
-					"margin": "none",
-					"offsetTop": "none",
-					"position": "relative",
-					"offsetStart": "none",
-					"offsetEnd": "none",
-					"offsetBottom": "none"
-				},
-				"footer": {
-					"type": "box",
-					"layout": "vertical",
-					"contents": [
-						{
-							"type": "button",
-							"color": "#EEE9E9",
-							"margin": "none",
-							"action": {
-								"type": "uri",
-								"label": "打開我的禮物",
-								"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendtype()}&${sendInput()}`
-							},
-							"style": "secondary"
+						"offsetTop": "none",
+						"offsetBottom": "none",
+						"offsetStart": "none",
+						"margin": "none",
+						"align": "center",
+						"aspectMode": "cover"
+					},
+					"body": {
+						"type": "box",
+						"layout": "horizontal",
+						"spacing": "none",
+						"action": {
+							"type": "uri",
+							"label": "action",
+							"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendtype()}&${sendInput()}`
 						},
-						{
-							"type": "button",
-							"action": {
-								"type": "uri",
-								"label": "傳送感謝小卡",
-								"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendtype()}&${sendInput()}`
+						"contents": [
+							{
+								"type": "image",
+								"url": "https://raw.githubusercontent.com/AmilyCC/imageStore/master/starbucks.jpg",
+								"align": "start",
+								"size": "md",
+								"offsetTop": "none",
+								"offsetBottom": "none",
+								"action": {
+									"type": "uri",
+									"label": "action",
+									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendtype()}&${sendInput()}`
+								},
+								"offsetStart": "none",
+								"position": "relative",
+								"offsetEnd": "none"
+							},
+							{
+								"type": "text",
+								"text": "【星巴克】致敬女神組合",
+								"size": "md",
+								"weight": "bold",
+								"margin": "none",
+								"align": "start",
+								"offsetTop": "xxl",
+								"contents": [],
+								"style": "normal",
+								"offsetEnd": "none",
+								"wrap": true,
+								"offsetBottom": "none",
+								"offsetStart": "none",
+								"action": {
+									"type": "uri",
+									"label": "action",
+									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendtype()}&${sendInput()}`
+								},
+								"position": "relative"
 							}
-						},
-						{
-							"type": "separator"
-						},
-						{
-							"type": "box",
-							"layout": "vertical",
-							"contents": [
-								{
-									"type": "button",
-									"action": {
-										"type": "uri",
-										"label": "LINE禮物",
-										"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendtype()}&${sendInput()}`
-									},
-									"position": "relative",
-									"margin": "none",
-									"height": "sm",
-									"style": "link",
-									"offsetTop": "none",
-									"offsetStart": "none",
-									"offsetEnd": "none"
+						],
+						"margin": "none",
+						"offsetTop": "none",
+						"position": "relative",
+						"offsetStart": "none",
+						"offsetEnd": "none",
+						"offsetBottom": "none"
+					},
+					"footer": {
+						"type": "box",
+						"layout": "vertical",
+						"contents": [
+							{
+								"type": "button",
+								"color": "#EEE9E9",
+								"margin": "none",
+								"action": {
+									"type": "uri",
+									"label": "打開我的禮物",
+									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendtype()}&${sendInput()}`
+								},
+								"style": "secondary"
+							},
+							{
+								"type": "button",
+								"action": {
+									"type": "uri",
+									"label": "傳送感謝小卡",
+									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendtype()}&${sendInput()}`
 								}
-							],
-							"action": {
-								"type": "uri",
-								"label": "action",
-								"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendtype()}&${sendInput()}`
+							},
+							{
+								"type": "separator"
+							},
+							{
+								"type": "box",
+								"layout": "vertical",
+								"contents": [
+									{
+										"type": "button",
+										"action": {
+											"type": "uri",
+											"label": "LINE禮物",
+											"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendtype()}&${sendInput()}`
+										},
+										"position": "relative",
+										"margin": "none",
+										"height": "sm",
+										"style": "link",
+										"offsetTop": "none",
+										"offsetStart": "none",
+										"offsetEnd": "none"
+									}
+								],
+								"action": {
+									"type": "uri",
+									"label": "action",
+									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendtype()}&${sendInput()}`
+								}
 							}
-						}
-					]
+						]
+					}
 				}
 			}
-		}
-	])
-	if (sent){
+		])
+		
 		if (result) {
 			alert(`[${result.status}] Message sent!`)
 		} else {
