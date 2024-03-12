@@ -8,6 +8,7 @@ function initContent(type) {
     let imageLink = document.getElementById('imageLink')
     userInput.value = ''
     if (type == "text") {
+        imageLink.style.display = "none"
         userInput.placeholder = '輸入欲傳送文字'
         userInput.type = 'text'
     } else{
@@ -36,7 +37,7 @@ function InputExist(){
             if (lowerIuput.endsWith(image)) {
                 return true;
             }else{
-                alert('請輸入正確的圖片網址')
+                alert('請輸入正確的圖片網址(.jpg/.png/.gif 等圖檔結尾)')
                 return false
             }
         }
