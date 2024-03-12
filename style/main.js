@@ -4,7 +4,6 @@ const LIFF_ID_V2 = '2003958153-OL85ylYd'
 async function sendShare_Gift() {
 	const sent = await InputExist()
 	const name = await liff.getProfile().then((profile) => {
-
 		return profile.displayName;
 	}).catch((err) => {
 		return err;
@@ -168,7 +167,6 @@ async function sendShare_Gift() {
 async function sendShare_Ladder() {
 	const sent = await InputExist()
 	const name = await liff.getProfile().then((profile) => {
-
 		return profile.displayName;
 	}).catch((err) => {
 		return err;
@@ -295,7 +293,6 @@ async function sendShare_Ladder() {
 async function sendShare_Pay() {
 	const sent = await InputExist()
 	const name = await liff.getProfile().then((profile) => {
-
 		return profile.displayName;
 	}).catch((err) => {
 		return err;
@@ -431,7 +428,6 @@ async function sendShare_Pay() {
 async function Red_Env() {
 	const sent = await InputExist()
 	const name = await liff.getProfile().then((profile) => {
-
 		return profile.displayName;
 	}).catch((err) => {
 		return err;
@@ -576,7 +572,9 @@ function logOut() {
 }
 
 async function main() {
-	await liff.init({ liffId: LIFF_ID })
+	await liff.init({ 
+		liffId: LIFF_ID 
+	})
 	if (liff.isLoggedIn()) {
 		document.getElementById("sendForm").style.display = "block"
 		document.getElementById("btnShare").style.display = "block"
