@@ -2,8 +2,9 @@ const domain = 'https://liff.line.me/'
 const LIFF_ID = '2003958153-Bg6DpwXW'
 const LIFF_ID_V2 = '2003958153-OL85ylYd'
 async function sendShare_Gift() {
-	name = await liff.getProfile().then((profile) => {
-		InputExist()
+	const sent = await InputExist()
+	const name = await liff.getProfile().then((profile) => {
+
 		return profile.displayName;
 	}).catch((err) => {
 		return err;
@@ -144,25 +145,28 @@ async function sendShare_Gift() {
 			}
 		}
 	])
-	if (result) {
-		alert(`[${result.status}] Message sent!`)
-	} else {
-		const [majorVer, minorVer, patchVer] = (liff.getLineVersion() || "").split('.');
+	if (sent){
+		if (result) {
+			alert(`[${result.status}] Message sent!`)
+		} else {
+			const [majorVer, minorVer, patchVer] = (liff.getLineVersion() || "").split('.');
 
-		if (minorVer === undefined) {
-			alert('ShareTargetPicker was canceled in external browser')
-			return
-		}
+			if (minorVer === undefined) {
+				alert('ShareTargetPicker was canceled in external browser')
+				return
+			}
 
-		if (parseInt(majorVer) >= 10 && parseInt(minorVer) >= 10 && parseInt(patchVer) > 0) {
-			alert('ShareTargetPicker was canceled in LINE app')
+			if (parseInt(majorVer) >= 10 && parseInt(minorVer) >= 10 && parseInt(patchVer) > 0) {
+				alert('ShareTargetPicker was canceled in LINE app')
+			}
 		}
 	}
+
 }
 
 async function sendShare_Ladder() {
-	name = await liff.getProfile().then((profile) => {
-		InputExist()
+	const name = await liff.getProfile().then((profile) => {
+
 		return profile.displayName;
 	}).catch((err) => {
 		return err;
@@ -286,8 +290,8 @@ async function sendShare_Ladder() {
 }
 
 async function sendShare_Pay() {
-	name = await liff.getProfile().then((profile) => {
-		InputExist()
+	const name = await liff.getProfile().then((profile) => {
+
 		return profile.displayName;
 	}).catch((err) => {
 		return err;
@@ -419,8 +423,8 @@ async function sendShare_Pay() {
 }
 
 async function Red_Env() {
-	name = await liff.getProfile().then((profile) => {
-		InputExist()
+	const name = await liff.getProfile().then((profile) => {
+
 		return profile.displayName;
 	}).catch((err) => {
 		return err;
