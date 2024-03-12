@@ -21,10 +21,14 @@ function sendtype(){
 }
 function sendInput(){
     let input = document.getElementById('userInput').value
-    if (sendtype()== "text"){
-        return `text=${input}`
+    if(input == ''){
+        alert('請輸入文字')
     }else{
-        return `downloadUrl=${input}&previewUrl=${input}`
+        if (sendtype()== "text"){
+            return `text=${input}`
+        }else{
+            return `downloadUrl=${input}&previewUrl=${input}`
+        }
     }
-
+    
 }
