@@ -16,8 +16,9 @@
 
 <body>
   <div class="m-auto wrap">
+    <h1>好玩的整人小玩具</h1>
     <div class="p-3 form-label-group" id="sendForm" style="display: none;">
-      <h1>這邊輸入要整對方的文字或圖片連結</h1>
+      <h2 class="h2-txt">step1 先輸入要讓對方輸入的文字或圖片連結</h2>
       <select class="p-3 my-3 mx-auto form-select custom-select d-block w-80" id="type" onchange="changeType()" required>
         <option value="choose" disable hidden selected>選擇傳送訊息類型</option>
         <option value="text">文字</option>
@@ -27,7 +28,9 @@
         <a target="_blank" href="https://meee.com.tw/" id="imageLink" style="display:none"><span>獲取圖片連結</span><p>點擊圖片右上角 ··· 複製圖片連結</p></a>
         <input type="text" id="userInput" class="form-control" placeholder="Text message" required>
       </div>
+       <h2 class="h2-txt">step2 選擇整人模板</h2>
     </div>
+   
     <button class="btn btn-outline-primary" id="btnShare" onclick="sendShare_Gift()"
       style="display: none;margin: 20px auto;padding: 20px;">送禮物</button>
     <button class="btn btn-outline-primary" id="btnShare2" onclick="sendShare_Ladder()"
