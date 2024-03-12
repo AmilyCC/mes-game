@@ -3,11 +3,11 @@ const LIFF_ID = '2003958153-Bg6DpwXW'
 const LIFF_ID_V2 = '2003958153-OL85ylYd'
 async function sendShare_Gift() {
 	name = await liff.getProfile().then((profile) => {
+		InputExist()
 		return profile.displayName;
 	}).catch((err) => {
 		return err;
 	});
-	sendtype()
 	const result = await liff.shareTargetPicker([
 		{
 			"type": "flex",
@@ -162,6 +162,7 @@ async function sendShare_Gift() {
 
 async function sendShare_Ladder() {
 	name = await liff.getProfile().then((profile) => {
+		InputExist()
 		return profile.displayName;
 	}).catch((err) => {
 		return err;
@@ -286,6 +287,7 @@ async function sendShare_Ladder() {
 
 async function sendShare_Pay() {
 	name = await liff.getProfile().then((profile) => {
+		InputExist()
 		return profile.displayName;
 	}).catch((err) => {
 		return err;
@@ -418,6 +420,7 @@ async function sendShare_Pay() {
 
 async function Red_Env() {
 	name = await liff.getProfile().then((profile) => {
+		InputExist()
 		return profile.displayName;
 	}).catch((err) => {
 		return err;
