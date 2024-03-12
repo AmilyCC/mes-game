@@ -23,10 +23,10 @@ function InputExist(){
     const images = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg', '.webp'];
     let input = document.getElementById('userInput').value
     const lowerCaseUrl = input.toLowerCase();
-    if((sendtype() == ""||sendtype() == "text") && input == ''){
+    if((sendtype() == 'choose'||sendtype() == 'text') && input == ''){
         alert('請輸入文字')
         return false
-    }else if(sendtype() == "image"){
+    }else if(sendtype() == 'image'){
         for (let image of images) {
             if (lowerCaseUrl.endsWith(image)) {
                 return true;
@@ -42,7 +42,7 @@ function InputExist(){
 
 function sendInput(){
     let input = document.getElementById('userInput').value
-    if (sendtype() == "text"){
+    if (sendtype() == 'text'){
         return `text=${input}`
     }else{
         return `downloadUrl=${input}&previewUrl=${input}`
