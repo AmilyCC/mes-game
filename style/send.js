@@ -27,17 +27,16 @@ function initContent(type) {
 }
 
 
-function InputExist(){
-    
-    if((sendType() == 'choose') && input == ''){
+function InputExist(){    
+    if((sendType() == 'choose') && nowInput() == ''){
         alert('選擇傳送訊息類型');
         return false;
-    }else if((sendType() == 'text') && input == ''){
+    }else if((sendType() == 'text') && nowInput() == ''){
         alert('請輸入文字訊息')
         return false;
     }else if(sendType() == 'image'){
         const images = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg', '.webp'];
-        const lowerIuput = input.toLowerCase();
+        const lowerIuput = nowInput().toLowerCase();
         for (let image of images) {
             if (lowerIuput.endsWith(image)) {
                 return true;
@@ -49,14 +48,14 @@ function InputExist(){
         return true;
     }
 }
-let convertInput = function trimConvert(){
+function trimConvert(){
     let utf8EncodedText = encodeURIComponent(nowInput());
     return utf8EncodedText
 }
 function sendInput(){
     if (sendType() == 'text'){
-        return `text=${convertInput}`
+        return `text=${trimConvert()}`
     }else{
-        return `downloadUrl=${nowInput()}&previewUrl=${nowInput()}`
+        return `downloadUrl=${trimConvert()}&previewUrl=${trimConvert()}`
     }
 }
