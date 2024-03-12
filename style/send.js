@@ -1,14 +1,14 @@
-let nowType = function sendType(){
+function sendType(){
     let type = document.getElementById('type').value
     return type 
 }
-let nowInput = function nowInput(){
+function nowInput(){
     let input = document.getElementById('userInput').value
     return input
 }
 
 function changeType() {
-    initContent(nowType);
+    initContent(sendType());
 }
 
 function initContent(type) {
@@ -50,13 +50,13 @@ function InputExist(){
     }
 }
 let convertInput = function trimConvert(){
-    let utf8EncodedText = encodeURIComponent(nowInput);
+    let utf8EncodedText = encodeURIComponent(nowInput());
     return utf8EncodedText
 }
 function sendInput(){
     if (sendType() == 'text'){
         return `text=${convertInput}`
     }else{
-        return `downloadUrl=${nowInput}&previewUrl=${nowInput}`
+        return `downloadUrl=${nowInput()}&previewUrl=${nowInput()}`
     }
 }
