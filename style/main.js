@@ -7,7 +7,7 @@ async function sendShare_Gift() {
 	}).catch((err) => {
 		return err;
 	});
-
+	sendtype()
 	const result = await liff.shareTargetPicker([
 		{
 			"type": "flex",
