@@ -23,9 +23,10 @@ function InputExist(){
     const images = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg', '.webp'];
     let input = document.getElementById('userInput').value
     const lowerCaseUrl = input.toLowerCase();
-    if(input == ''){
+    if(sendtype() == "text" || input == ''){
         alert('請輸入文字')
-    }else if(sendtype() == "image"){
+        return false
+    }else if(sendtype() == "image" && input == ''){
         for (let image of images) {
             if (lowerCaseUrl.endsWith(image)) {
                 return ;
@@ -33,13 +34,14 @@ function InputExist(){
                 alert('請輸入正確的圖片網址')
             }
         }
+        return false
     }else{
-        return
+        return ture
     }
 }
 
 function sendInput(){
-    InputExist()
+    let input = document.getElementById('userInput').value
     if (sendtype() == "text"){
         return `text=${input}`
     }else{
