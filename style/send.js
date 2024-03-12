@@ -25,24 +25,23 @@ function sendtype(){
 function InputExist(){
     let input = document.getElementById('userInput').value
     if((sendtype() == 'text') && input == ''){
-        alert('選擇傳送訊息類型')
-        return false
+        alert('選擇傳送訊息類型');
+        return false;
     }else if((sendtype() == 'choose') && input == ''){
         alert('請輸入文字')
-        return false
+        return false;
     }else if(sendtype() == 'image'){
         const images = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg', '.webp'];
         const lowerIuput = input.toLowerCase();
         for (let image of images) {
             if (lowerIuput.endsWith(image)) {
                 return true;
-            }else{
-                alert('請輸入正確的圖片網址(.jpg/.png/.gif 等圖檔結尾)')
-                return false
             }
         }
+        alert('請輸入正確的圖片網址(.jpg/.png/.gif 等圖檔結尾)')
+        return false;
     }else{
-        return true
+        return true;
     }
 }
 
