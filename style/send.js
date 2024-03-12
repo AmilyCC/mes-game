@@ -20,15 +20,18 @@ function sendtype(){
     return type 
 }
 function InputExist(){
-    const images = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg', '.webp'];
     let input = document.getElementById('userInput').value
-    const lowerCaseUrl = input.toLowerCase();
-    if((sendtype() == 'choose'||sendtype() == 'text') && input == ''){
+    if((sendtype() == 'text') && input == ''){
+        alert('選擇傳送訊息類型')
+        return false
+    }else if((sendtype() == 'choose') && input == ''){
         alert('請輸入文字')
         return false
     }else if(sendtype() == 'image'){
+        const images = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg', '.webp'];
+        const lowerIuput = input.toLowerCase();
         for (let image of images) {
-            if (lowerCaseUrl.endsWith(image)) {
+            if (lowerIuput.endsWith(image)) {
                 return true;
             }else{
                 alert('請輸入正確的圖片網址')
