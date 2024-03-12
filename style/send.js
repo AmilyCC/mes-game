@@ -23,20 +23,20 @@ function InputExist(){
     const images = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg', '.webp'];
     let input = document.getElementById('userInput').value
     const lowerCaseUrl = input.toLowerCase();
-    if(sendtype() == "text" || input == ''){
+    if((sendtype() == ""||sendtype() == "text") && input == ''){
         alert('請輸入文字')
         return false
-    }else if(sendtype() == "image" && input == ''){
+    }else if(sendtype() == "image"){
         for (let image of images) {
             if (lowerCaseUrl.endsWith(image)) {
-                return ;
+                return true;
             }else{
                 alert('請輸入正確的圖片網址')
+                return false
             }
         }
-        return false
     }else{
-        return ture
+        return true
     }
 }
 
