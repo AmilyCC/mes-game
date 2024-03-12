@@ -20,13 +20,17 @@ button {
   padding: 16px 0;
   margin: auto 0;
 }
-
 #imageLink {
-  display: block;
   width: fit-content;
   margin: 10px 0;
-  padding: 5px 10px;
-  background: #9a80a3;
-  color: #ffffff;
+  color: #9a80a3;
   text-decoration: none;
+}
+#imageLink span {
+    display: inline-block;
+    width: fit-content;
+    margin: 0 10px 0 0;
+    padding: 5px 10px;
+    background: #9a80a3;
+    color: #ffffff;
 }
