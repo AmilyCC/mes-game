@@ -48,14 +48,28 @@ function InputExist(){
         return true;
     }
 }
-function trimConvert(){
+function utf8Convert(){
     let utf8EncodedText = encodeURIComponent(nowInput());
     return utf8EncodedText
 }
-function sendInput(){
+function sendAction(){
     if (sendType() == 'text'){
-        return `text=${trimConvert()}`
+        return 'message'
     }else{
-        return `downloadUrl=${trimConvert()}&previewUrl=${trimConvert()}`
+        return 'uri'
+    }
+}
+function sendUri(){
+    if (sendType() == 'text'){
+        return ''
+    }else{
+        return `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&downloadUrl=${utf8Convert()}&previewUrl=${utf8Convert()}`
+    }
+}
+function sendMessage(){
+    if (sendType() == 'text'){
+        return `${nowInput()}`
+    }else{
+        return ''
     }
 }
