@@ -52,24 +52,10 @@ function utf8Convert(){
     let utf8EncodedText = encodeURIComponent(nowInput());
     return utf8EncodedText
 }
-function sendAction(){
+function sendInput(){
     if (sendType() == 'text'){
-        return 'message'
+        return `text=${utf8Convert()}`
     }else{
-        return 'uri'
-    }
-}
-function sendUri(){
-    if (sendType() == 'text'){
-        return ''
-    }else{
-        return `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&downloadUrl=${utf8Convert()}&previewUrl=${utf8Convert()}`
-    }
-}
-function sendMessage(){
-    if (sendType() == 'text'){
-        return `${nowInput()}`
-    }else{
-        return ''
+        return `downloadUrl=${utf8Convert()}&previewUrl=${utf8Convert()}`
     }
 }
