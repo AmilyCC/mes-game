@@ -78,7 +78,8 @@ async function sendShare_Gift() {
 									"type": "message",
 									"label": "action",
 									"text": "hello"
-								}
+								},
+								"position": "relative"
 							}
 						],
 						"margin": "none",
