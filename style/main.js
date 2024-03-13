@@ -24,8 +24,7 @@ async function sendShare_Gift() {
 						"action": {
 							"type": "message",
 							"label": "action",
-							// "uri": `${sendUri()}`,
-							"text":sendMessage()
+							"text": "hello"
 						},
 						"offsetTop": "none",
 						"offsetBottom": "none",
@@ -41,8 +40,7 @@ async function sendShare_Gift() {
 						"action": {
 							"type": "message",
 							"label": "action",
-							// "uri": `${sendUri()}`,
-							"text":sendMessage()
+							"text": "hello"
 						},
 						"contents": [
 							{
@@ -53,11 +51,10 @@ async function sendShare_Gift() {
 								"offsetTop": "none",
 								"offsetBottom": "none",
 								"action": {
-							"type": "message",
-							"label": "action",
-							// "uri": `${sendUri()}`,
-							"text":sendMessage()
-						},
+									"type": "message",
+									"label": "action",
+									"text": "hello"
+								},
 								"offsetStart": "none",
 								"position": "relative",
 								"offsetEnd": "none"
@@ -76,13 +73,12 @@ async function sendShare_Gift() {
 								"wrap": true,
 								"offsetBottom": "none",
 								"offsetStart": "none",
+								"position": "relative",
 								"action": {
-								"type": "message",
-								"label": "action",
-								// // "uri": `${sendUri()}`,
-								"message":sendMessage()
-							},
-								"position": "relative"
+									"type": "message",
+									"label": "action",
+									"text": "hello"
+								}
 							}
 						],
 						"margin": "none",
@@ -103,8 +99,7 @@ async function sendShare_Gift() {
 								"action": {
 									"type": "message",
 									"label": "打開我的禮物",
-									// "uri": `${sendUri()}`,
-									"text":sendMessage()
+									"text": "hello"
 								},
 								"style": "secondary"
 							},
@@ -113,8 +108,7 @@ async function sendShare_Gift() {
 								"action": {
 									"type": "message",
 									"label": "傳送感謝小卡",
-									// "uri": `${sendUri()}`,
-									"text":sendMessage()
+									"text": "hello"
 								}
 							},
 							{
@@ -129,8 +123,7 @@ async function sendShare_Gift() {
 										"action": {
 											"type": "message",
 											"label": "LINE禮物",
-											// "uri": `${sendUri()}`,
-											"text": sendMessage()
+											"text": "hello"
 										},
 										"position": "relative",
 										"margin": "none",
@@ -144,8 +137,7 @@ async function sendShare_Gift() {
 								"action": {
 									"type": "message",
 									"label": "action",
-									// "uri": `${sendUri()}`,
-									"text":sendMessage()
+									"text": "hello"
 								}
 							}
 						]
