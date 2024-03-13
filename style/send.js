@@ -52,24 +52,49 @@ function utf8Convert(){
     let utf8EncodedText = encodeURIComponent(nowInput());
     return utf8EncodedText
 }
-function sendAction(){
+
+function sendToAction(){
     if (sendType() == 'text'){
-        return `message`
-    }else{
-        return `uri`
-    }
-}
-function sendUri(){
-    if (sendType() == 'text'){
-        return false
+        return `${nowInput()}`
     }else{
         return `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&downloadUrl=${utf8Convert()}&previewUrl=${utf8Convert()}`
     }
 }
-function sendMessage(){
+
+function actionSetting(action){
     if (sendType() == 'text'){
-        return `${nowInput()}`
+        return `
+            {
+                "type": "message",
+                "label": ${action},
+                "message":${sendToAction()}
+            }
+            `
     }else{
-        return false
+        return `
+            {
+                "type": "uri",
+                "label": ${action},
+                "uri": ${sendToAction()}
+            }
+            `
+    }
+}
+
+function actionSettingII(){
+    if (sendType() == 'text'){
+        return `
+            {
+                "type": "message",
+                "message":${sendToAction()}
+            }
+            `
+    }else{
+        return `
+            {
+                "type": "uri",
+                "uri": ${sendToAction()}
+            }
+            `
     }
 }
