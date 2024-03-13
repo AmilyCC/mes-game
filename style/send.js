@@ -48,53 +48,14 @@ function InputExist(){
         return true;
     }
 }
-function utf8Convert(){
+function trimConvert(){
     let utf8EncodedText = encodeURIComponent(nowInput());
     return utf8EncodedText
 }
-
-function sendToAction(){
+function sendInput(){
     if (sendType() == 'text'){
-        return `${nowInput()}`
+        return `text=${trimConvert()}`
     }else{
-        return `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&downloadUrl=${utf8Convert()}&previewUrl=${utf8Convert()}`
-    }
-}
-
-function actionSetting(action){
-    if (sendType() == 'text'){
-        return `
-            {
-                "type": "message",
-                "label": ${action},
-                "message":${sendToAction()}
-            }
-            `
-    }else{
-        return `
-            {
-                "type": "uri",
-                "label": ${action},
-                "uri": ${sendToAction()}
-            }
-            `
-    }
-}
-
-function actionSettingII(){
-    if (sendType() == 'text'){
-        return `
-            {
-                "type": "message",
-                "message":${sendToAction()}
-            }
-            `
-    }else{
-        return `
-            {
-                "type": "uri",
-                "uri": ${sendToAction()}
-            }
-            `
+        return `downloadUrl=${trimConvert()}&previewUrl=${trimConvert()}`
     }
 }

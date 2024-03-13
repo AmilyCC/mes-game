@@ -1,14 +1,6 @@
 const domain = 'https://liff.line.me/'
 const LIFF_ID = '2003958153-Bg6DpwXW'
 const LIFF_ID_V2 = '2003958153-OL85ylYd'
-const actionTxt = 'action'
-const giftTxtI = '打開我的禮物'
-const giftTxtII = '傳送感謝小卡'
-const giftTxtIII = 'LINE禮物'
-const ladderTxtI = '開啟爬梯子遊戲'
-const ladderTxtII = '查看全部結果'
-const payTxt = '瞭解更多'
-const redTxt = '查看紅包狀態'
 async function sendShare_Gift() {
 	const sent = await InputExist()
 	const name = await liff.getProfile().then((profile) => {
@@ -29,7 +21,11 @@ async function sendShare_Gift() {
 						"url": "https://raw.githubusercontent.com/AmilyCC/imageStore/master/gift-banner.png",
 						"size": "full",
 						"aspectRatio": "18:19",
-						"action": actionSetting(actionTxt),
+						"action": {
+							"type": "uri",
+							"label": "action",
+							"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+						},
 						"offsetTop": "none",
 						"offsetBottom": "none",
 						"offsetStart": "none",
@@ -41,7 +37,11 @@ async function sendShare_Gift() {
 						"type": "box",
 						"layout": "horizontal",
 						"spacing": "none",
-						"action": actionSetting(actionTxt),
+						"action": {
+							"type": "uri",
+							"label": "action",
+							"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+						},
 						"contents": [
 							{
 								"type": "image",
@@ -50,7 +50,11 @@ async function sendShare_Gift() {
 								"size": "md",
 								"offsetTop": "none",
 								"offsetBottom": "none",
-								"action": actionSetting(actionTxt),
+								"action": {
+									"type": "uri",
+									"label": "action",
+									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+								},
 								"offsetStart": "none",
 								"position": "relative",
 								"offsetEnd": "none"
@@ -69,7 +73,11 @@ async function sendShare_Gift() {
 								"wrap": true,
 								"offsetBottom": "none",
 								"offsetStart": "none",
-								"action": actionSetting(actionTxt),
+								"action": {
+									"type": "uri",
+									"label": "action",
+									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+								},
 								"position": "relative"
 							}
 						],
@@ -88,12 +96,20 @@ async function sendShare_Gift() {
 								"type": "button",
 								"color": "#EEE9E9",
 								"margin": "none",
-								"action": actionSetting(giftTxtI),
+								"action": {
+									"type": "uri",
+									"label": "打開我的禮物",
+									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+								},
 								"style": "secondary"
 							},
 							{
 								"type": "button",
-								"action": actionSetting(giftTxtII)
+								"action": {
+									"type": "uri",
+									"label": "傳送感謝小卡",
+									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+								}
 							},
 							{
 								"type": "separator"
@@ -104,7 +120,11 @@ async function sendShare_Gift() {
 								"contents": [
 									{
 										"type": "button",
-										"action": actionSetting(giftTxtIII),
+										"action": {
+											"type": "uri",
+											"label": "LINE禮物",
+											"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+										},
 										"position": "relative",
 										"margin": "none",
 										"height": "sm",
@@ -114,7 +134,11 @@ async function sendShare_Gift() {
 										"offsetEnd": "none"
 									}
 								],
-								"action": actionSetting(actionTxt)
+								"action": {
+									"type": "uri",
+									"label": "action",
+									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+								}
 							}
 						]
 					}
@@ -161,7 +185,10 @@ async function sendShare_Ladder() {
 						"size": "full",
 						"aspectRatio": "20:13",
 						"aspectMode": "cover",
-						"action": actionSettingII()
+						"action": {
+							"type": "uri",
+							"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+						}
 					},
 					"body": {
 						"type": "box",
@@ -194,7 +221,11 @@ async function sendShare_Ladder() {
 								]
 							}
 						],
-						"action": actionSetting(actionTxt)
+						"action": {
+							"type": "uri",
+							"label": "action",
+							"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+						}
 					},
 					"footer": {
 						"type": "box",
@@ -209,13 +240,21 @@ async function sendShare_Ladder() {
 								"type": "button",
 								"style": "link",
 								"height": "sm",
-								"action": actionSetting(ladderTxtI)
+								"action": {
+									"type": "uri",
+									"label": "開啟爬梯子遊戲",
+									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+								}
 							},
 							{
 								"type": "button",
 								"style": "link",
 								"height": "sm",
-								"action": actionSetting(ladderTxtII)
+								"action": {
+									"type": "uri",
+									"label": "查看全部結果",
+									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+								}
 							},
 							{
 								"type": "separator"
@@ -272,7 +311,10 @@ async function sendShare_Pay() {
 						"size": "full",
 						"aspectRatio": "20:13",
 						"aspectMode": "cover",
-						"action": actionSettingII(),
+						"action": {
+							"type": "uri",
+							"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+						},
 						"position": "relative"
 					},
 					"body": {
@@ -284,7 +326,11 @@ async function sendShare_Pay() {
 								"text": "LINE Pay",
 								"weight": "bold",
 								"size": "xs",
-								"action": actionSetting(actionTxt)
+								"action": {
+									"type": "uri",
+									"label": "action",
+									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+								}
 							},
 							{
 								"type": "text",
@@ -292,7 +338,11 @@ async function sendShare_Pay() {
 								"size": "xs",
 								"contents": [],
 								"color": "#8E8E8E",
-								"action": actionSetting(actionTxt)
+								"action": {
+									"type": "uri",
+									"label": "action",
+									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+								}
 							},
 							{
 								"type": "button",
@@ -301,12 +351,20 @@ async function sendShare_Pay() {
 								"height": "sm",
 								"margin": "lg",
 								"color": "#F0F0F0",
-								"action": actionSetting(payTxt),
+								"action": {
+									"type": "uri",
+									"label": "瞭解更多",
+									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+								},
 								"scaling": true,
 								"offsetEnd": "none"
 							}
 						],
-						"action": actionSetting(actionTxt)
+						"action": {
+							"type": "uri",
+							"label": "action",
+							"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+						}
 					},
 					"footer": {
 						"type": "box",
@@ -335,7 +393,11 @@ async function sendShare_Pay() {
 								"offsetTop": "xs"
 							}
 						],
-						"action": actionSetting(actionTxt),
+						"action": {
+							"type": "uri",
+							"label": "action",
+							"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+						},
 						"position": "relative"
 					},
 					"styles": {
@@ -384,7 +446,11 @@ async function Red_Env() {
 						"size": "full",
 						"aspectRatio": "20:13",
 						"aspectMode": "cover",
-						"action": actionSetting(actionTxt)
+						"action": {
+							"type": "uri",
+							"label": "action",
+							"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+						}
 					},
 					"body": {
 						"type": "box",
@@ -396,7 +462,11 @@ async function Red_Env() {
 								"weight": "bold",
 								"size": "sm",
 								"color": "#000000",
-								"action": actionSetting(actionTxt)
+								"action": {
+									"type": "uri",
+									"label": "action",
+									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+								}
 							},
 							{
 								"type": "text",
@@ -404,7 +474,11 @@ async function Red_Env() {
 								"size": "xs",
 								"wrap": true,
 								"offsetTop": "md",
-								"action": actionSetting(actionTxt)
+								"action": {
+									"type": "uri",
+									"label": "action",
+									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+								}
 							}
 						]
 					},
@@ -419,7 +493,11 @@ async function Red_Env() {
 							{
 								"type": "button",
 								"style": "link",
-								"action": actionSetting(redTxt),
+								"action": {
+									"type": "uri",
+									"label": "查看紅包狀態",
+									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+								},
 								"margin": "none"
 							},
 							{
