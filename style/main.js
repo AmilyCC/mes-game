@@ -22,9 +22,10 @@ async function sendShare_Gift() {
 						"size": "full",
 						"aspectRatio": "18:19",
 						"action": {
-							"type": "uri",
+							"type": sendAction(),
 							"label": "action",
-							"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+							"uri": `${sendUri()}`,
+							"message":`${sendMessage()}`
 						},
 						"offsetTop": "none",
 						"offsetBottom": "none",
@@ -38,9 +39,10 @@ async function sendShare_Gift() {
 						"layout": "horizontal",
 						"spacing": "none",
 						"action": {
-							"type": "uri",
+							"type": sendAction(),
 							"label": "action",
-							"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+							"uri": `${sendUri()}`,
+							"message":`${sendMessage()}`
 						},
 						"contents": [
 							{
@@ -51,9 +53,10 @@ async function sendShare_Gift() {
 								"offsetTop": "none",
 								"offsetBottom": "none",
 								"action": {
-									"type": "uri",
+									"type": sendAction(),
 									"label": "action",
-									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+									"uri": `${sendUri()}`,
+									"message":`${sendMessage()}`
 								},
 								"offsetStart": "none",
 								"position": "relative",
@@ -74,9 +77,10 @@ async function sendShare_Gift() {
 								"offsetBottom": "none",
 								"offsetStart": "none",
 								"action": {
-									"type": "uri",
+									"type": sendAction(),
 									"label": "action",
-									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+									"uri": `${sendUri()}`,
+									"message":`${sendMessage()}`
 								},
 								"position": "relative"
 							}
@@ -97,18 +101,20 @@ async function sendShare_Gift() {
 								"color": "#EEE9E9",
 								"margin": "none",
 								"action": {
-									"type": "uri",
+									"type": sendAction(),
 									"label": "打開我的禮物",
-									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+									"uri": `${sendUri()}`,
+									"message":`${sendMessage()}`
 								},
 								"style": "secondary"
 							},
 							{
 								"type": "button",
 								"action": {
-									"type": "uri",
+									"type": sendAction(),
 									"label": "傳送感謝小卡",
-									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+									"uri": `${sendUri()}`,
+									"message":`${sendMessage()}`
 								}
 							},
 							{
@@ -121,9 +127,10 @@ async function sendShare_Gift() {
 									{
 										"type": "button",
 										"action": {
-											"type": "uri",
+											"type": sendAction(),
 											"label": "LINE禮物",
-											"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+											"uri": `${sendUri()}`,
+									"message":`${sendMessage()}`
 										},
 										"position": "relative",
 										"margin": "none",
@@ -135,9 +142,10 @@ async function sendShare_Gift() {
 									}
 								],
 								"action": {
-									"type": "uri",
+									"type": sendAction(),
 									"label": "action",
-									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+									"uri": `${sendUri()}`,
+									"message":`${sendMessage()}`
 								}
 							}
 						]
@@ -186,8 +194,9 @@ async function sendShare_Ladder() {
 						"aspectRatio": "20:13",
 						"aspectMode": "cover",
 						"action": {
-							"type": "uri",
-							"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+							"type": sendAction(),
+							"uri": `${sendUri()}`,
+									"message":`${sendMessage()}`
 						}
 					},
 					"body": {
@@ -222,9 +231,10 @@ async function sendShare_Ladder() {
 							}
 						],
 						"action": {
-							"type": "uri",
+							"type": sendAction(),
 							"label": "action",
-							"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+							"uri": `${sendUri()}`,
+									"message":`${sendMessage()}`
 						}
 					},
 					"footer": {
@@ -241,9 +251,10 @@ async function sendShare_Ladder() {
 								"style": "link",
 								"height": "sm",
 								"action": {
-									"type": "uri",
+									"type": sendAction(),
 									"label": "開啟爬梯子遊戲",
-									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+									"uri": `${sendUri()}`,
+									"message":`${sendMessage()}`
 								}
 							},
 							{
@@ -251,9 +262,10 @@ async function sendShare_Ladder() {
 								"style": "link",
 								"height": "sm",
 								"action": {
-									"type": "uri",
+									"type": sendAction(),
 									"label": "查看全部結果",
-									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+									"uri": `${sendUri()}`,
+									"message":`${sendMessage()}`
 								}
 							},
 							{
@@ -312,8 +324,9 @@ async function sendShare_Pay() {
 						"aspectRatio": "20:13",
 						"aspectMode": "cover",
 						"action": {
-							"type": "uri",
-							"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+							"type": sendAction(),
+							"uri": `${sendUri()}`,
+									"message":`${sendMessage()}`
 						},
 						"position": "relative"
 					},
@@ -327,9 +340,10 @@ async function sendShare_Pay() {
 								"weight": "bold",
 								"size": "xs",
 								"action": {
-									"type": "uri",
+									"type": sendAction(),
 									"label": "action",
-									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+									"uri": `${sendUri()}`,
+									"message":`${sendMessage()}`
 								}
 							},
 							{
@@ -339,9 +353,10 @@ async function sendShare_Pay() {
 								"contents": [],
 								"color": "#8E8E8E",
 								"action": {
-									"type": "uri",
+									"type": sendAction(),
 									"label": "action",
-									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+									"uri": `${sendUri()}`,
+									"message":`${sendMessage()}`
 								}
 							},
 							{
@@ -352,18 +367,20 @@ async function sendShare_Pay() {
 								"margin": "lg",
 								"color": "#F0F0F0",
 								"action": {
-									"type": "uri",
+									"type": sendAction(),
 									"label": "瞭解更多",
-									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+									"uri": `${sendUri()}`,
+									"message":`${sendMessage()}`
 								},
 								"scaling": true,
 								"offsetEnd": "none"
 							}
 						],
 						"action": {
-							"type": "uri",
+							"type": sendAction(),
 							"label": "action",
-							"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+							"uri": `${sendUri()}`,
+									"message":`${sendMessage()}`
 						}
 					},
 					"footer": {
@@ -394,9 +411,10 @@ async function sendShare_Pay() {
 							}
 						],
 						"action": {
-							"type": "uri",
+							"type": sendAction(),
 							"label": "action",
-							"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+							"uri": `${sendUri()}`,
+									"message":`${sendMessage()}`
 						},
 						"position": "relative"
 					},
@@ -447,9 +465,10 @@ async function Red_Env() {
 						"aspectRatio": "20:13",
 						"aspectMode": "cover",
 						"action": {
-							"type": "uri",
+							"type": sendAction(),
 							"label": "action",
-							"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+							"uri": `${sendUri()}`,
+									"message":`${sendMessage()}`
 						}
 					},
 					"body": {
@@ -463,9 +482,10 @@ async function Red_Env() {
 								"size": "sm",
 								"color": "#000000",
 								"action": {
-									"type": "uri",
+									"type": sendAction(),
 									"label": "action",
-									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+									"uri": `${sendUri()}`,
+									"message":`${sendMessage()}`
 								}
 							},
 							{
@@ -475,9 +495,10 @@ async function Red_Env() {
 								"wrap": true,
 								"offsetTop": "md",
 								"action": {
-									"type": "uri",
+									"type": sendAction(),
 									"label": "action",
-									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+									"uri": `${sendUri()}`,
+									"message":`${sendMessage()}`
 								}
 							}
 						]
@@ -494,9 +515,10 @@ async function Red_Env() {
 								"type": "button",
 								"style": "link",
 								"action": {
-									"type": "uri",
+									"type": sendAction(),
 									"label": "查看紅包狀態",
-									"uri": `${domain}${LIFF_ID_V2}?auto=yes&type=${sendType()}&${sendInput()}`
+									"uri": `${sendUri()}`,
+									"message":`${sendMessage()}`
 								},
 								"margin": "none"
 							},
