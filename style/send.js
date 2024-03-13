@@ -48,14 +48,14 @@ function InputExist(){
         return true;
     }
 }
-function trimConvert(){
+function utf8Convert(){
     let utf8EncodedText = encodeURIComponent(nowInput());
     return utf8EncodedText
 }
 function sendInput(){
     if (sendType() == 'text'){
-        return `text=${trimConvert()}`
+        return `text=${utf8Convert()}`
     }else{
-        return `downloadUrl=${trimConvert()}&previewUrl=${trimConvert()}`
+        return `downloadUrl=${utf8Convert()}&previewUrl=${utf8Convert()}`
     }
 }
