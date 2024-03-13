@@ -22,9 +22,9 @@ async function sendShare_Gift() {
 						"size": "full",
 						"aspectRatio": "18:19",
 						"action": {
-							"type": sendAction(),
+							"type": "message",
 							"label": "action",
-							"uri": `${sendUri()}`,
+							// "uri": `${sendUri()}`,
 							"message":`${sendMessage()}`
 						},
 						"offsetTop": "none",
@@ -39,9 +39,9 @@ async function sendShare_Gift() {
 						"layout": "horizontal",
 						"spacing": "none",
 						"action": {
-							"type": sendAction(),
+							"type": "message",
 							"label": "action",
-							"uri": `${sendUri()}`,
+							// "uri": `${sendUri()}`,
 							"message":`${sendMessage()}`
 						},
 						"contents": [
@@ -53,11 +53,11 @@ async function sendShare_Gift() {
 								"offsetTop": "none",
 								"offsetBottom": "none",
 								"action": {
-									"type": sendAction(),
-									"label": "action",
-									"uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
-								},
+							"type": "message",
+							"label": "action",
+							// "uri": `${sendUri()}`,
+							"message":`${sendMessage()}`
+						},
 								"offsetStart": "none",
 								"position": "relative",
 								"offsetEnd": "none"
@@ -77,11 +77,11 @@ async function sendShare_Gift() {
 								"offsetBottom": "none",
 								"offsetStart": "none",
 								"action": {
-									"type": sendAction(),
-									"label": "action",
-									"uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
-								},
+								"type": "message",
+								"label": "action",
+								// "uri": `${sendUri()}`,
+								"message":`${sendMessage()}`
+							},
 								"position": "relative"
 							}
 						],
@@ -101,9 +101,9 @@ async function sendShare_Gift() {
 								"color": "#EEE9E9",
 								"margin": "none",
 								"action": {
-									"type": sendAction(),
+									"type": "message",
 									"label": "打開我的禮物",
-									"uri": `${sendUri()}`,
+									// "uri": `${sendUri()}`,
 									"message":`${sendMessage()}`
 								},
 								"style": "secondary"
@@ -111,9 +111,9 @@ async function sendShare_Gift() {
 							{
 								"type": "button",
 								"action": {
-									"type": sendAction(),
+									"type": "message",
 									"label": "傳送感謝小卡",
-									"uri": `${sendUri()}`,
+									// "uri": `${sendUri()}`,
 									"message":`${sendMessage()}`
 								}
 							},
@@ -127,10 +127,10 @@ async function sendShare_Gift() {
 									{
 										"type": "button",
 										"action": {
-											"type": sendAction(),
+											"type": "message",
 											"label": "LINE禮物",
-											"uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
+											// "uri": `${sendUri()}`,
+											"message":`${sendMessage()}`
 										},
 										"position": "relative",
 										"margin": "none",
@@ -142,9 +142,9 @@ async function sendShare_Gift() {
 									}
 								],
 								"action": {
-									"type": sendAction(),
+									"type": "message",
 									"label": "action",
-									"uri": `${sendUri()}`,
+									// "uri": `${sendUri()}`,
 									"message":`${sendMessage()}`
 								}
 							}
