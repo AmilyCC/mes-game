@@ -24,8 +24,8 @@ async function sendShare_Gift() {
 						"action": {
 							"type": "message",
 							"label": "action",
-							// "uri": `${sendUri()}`,
-							"message":`${sendMessage()}`
+							"uri": `${sendUri()}`,
+							"text":`${sendMessage()}`
 						},
 						"offsetTop": "none",
 						"offsetBottom": "none",
@@ -41,8 +41,8 @@ async function sendShare_Gift() {
 						"action": {
 							"type": "message",
 							"label": "action",
-							// "uri": `${sendUri()}`,
-							"message":`${sendMessage()}`
+							"uri": `${sendUri()}`,
+							"text":`${sendMessage()}`
 						},
 						"contents": [
 							{
@@ -55,8 +55,8 @@ async function sendShare_Gift() {
 								"action": {
 							"type": "message",
 							"label": "action",
-							// "uri": `${sendUri()}`,
-							"message":`${sendMessage()}`
+							"uri": `${sendUri()}`,
+							"text":`${sendMessage()}`
 						},
 								"offsetStart": "none",
 								"position": "relative",
@@ -103,8 +103,8 @@ async function sendShare_Gift() {
 								"action": {
 									"type": "message",
 									"label": "打開我的禮物",
-									// "uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
+									"uri": `${sendUri()}`,
+									"text":`${sendMessage()}`
 								},
 								"style": "secondary"
 							},
@@ -113,8 +113,8 @@ async function sendShare_Gift() {
 								"action": {
 									"type": "message",
 									"label": "傳送感謝小卡",
-									// "uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
+									"uri": `${sendUri()}`,
+									"text":`${sendMessage()}`
 								}
 							},
 							{
@@ -129,8 +129,8 @@ async function sendShare_Gift() {
 										"action": {
 											"type": "message",
 											"label": "LINE禮物",
-											// "uri": `${sendUri()}`,
-											"message":`${sendMessage()}`
+											"uri": `${sendUri()}`,
+											"text":`${sendMessage()}`
 										},
 										"position": "relative",
 										"margin": "none",
@@ -144,8 +144,8 @@ async function sendShare_Gift() {
 								"action": {
 									"type": "message",
 									"label": "action",
-									// "uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
+									"uri": `${sendUri()}`,
+									"text":`${sendMessage()}`
 								}
 							}
 						]
