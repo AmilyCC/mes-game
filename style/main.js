@@ -1,6 +1,14 @@
 const domain = 'https://liff.line.me/'
 const LIFF_ID = '2003958153-Bg6DpwXW'
 const LIFF_ID_V2 = '2003958153-OL85ylYd'
+const actionTxt = 'action'
+const giftTxtI = '打開我的禮物'
+const giftTxtII = '傳送感謝小卡'
+const giftTxtIII = 'LINE禮物'
+const ladderTxtI = '開啟爬梯子遊戲'
+const ladderTxtII = '查看全部結果'
+const payTxt = '瞭解更多'
+const redTxt = '查看紅包狀態'
 async function sendShare_Gift() {
 	const sent = await InputExist()
 	const name = await liff.getProfile().then((profile) => {
@@ -21,12 +29,7 @@ async function sendShare_Gift() {
 						"url": "https://raw.githubusercontent.com/AmilyCC/imageStore/master/gift-banner.png",
 						"size": "full",
 						"aspectRatio": "18:19",
-						"action": {
-							"type": `${sendAction()}`,
-							"label": "action",
-							"uri": `${sendUri()}`,
-							"message":`${sendMessage()}`
-						},
+						"action": actionSetting(actionTxt),
 						"offsetTop": "none",
 						"offsetBottom": "none",
 						"offsetStart": "none",
@@ -38,12 +41,7 @@ async function sendShare_Gift() {
 						"type": "box",
 						"layout": "horizontal",
 						"spacing": "none",
-						"action": {
-							"type": `${sendAction()}`,
-							"label": "action",
-							"uri": `${sendUri()}`,
-							"message":`${sendMessage()}`
-						},
+						"action": actionSetting(actionTxt),
 						"contents": [
 							{
 								"type": "image",
@@ -52,12 +50,7 @@ async function sendShare_Gift() {
 								"size": "md",
 								"offsetTop": "none",
 								"offsetBottom": "none",
-								"action": {
-									"type": `${sendAction()}`,
-									"label": "action",
-									"uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
-								},
+								"action": actionSetting(actionTxt),
 								"offsetStart": "none",
 								"position": "relative",
 								"offsetEnd": "none"
@@ -76,12 +69,7 @@ async function sendShare_Gift() {
 								"wrap": true,
 								"offsetBottom": "none",
 								"offsetStart": "none",
-								"action": {
-									"type": `${sendAction()}`,
-									"label": "action",
-									"uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
-								},
+								"action": actionSetting(actionTxt),
 								"position": "relative"
 							}
 						],
@@ -100,22 +88,12 @@ async function sendShare_Gift() {
 								"type": "button",
 								"color": "#EEE9E9",
 								"margin": "none",
-								"action": {
-									"type": `${sendAction()}`,
-									"label": "打開我的禮物",
-									"uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
-								},
+								"action": actionSetting(giftTxtI),
 								"style": "secondary"
 							},
 							{
 								"type": "button",
-								"action": {
-									"type": `${sendAction()}`,
-									"label": "傳送感謝小卡",
-									"uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
-								}
+								"action": actionSetting(giftTxtII)
 							},
 							{
 								"type": "separator"
@@ -126,12 +104,7 @@ async function sendShare_Gift() {
 								"contents": [
 									{
 										"type": "button",
-										"action": {
-											"type": `${sendAction()}`,
-											"label": "LINE禮物",
-											"uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
-										},
+										"action": actionSetting(giftTxtIII),
 										"position": "relative",
 										"margin": "none",
 										"height": "sm",
@@ -141,12 +114,7 @@ async function sendShare_Gift() {
 										"offsetEnd": "none"
 									}
 								],
-								"action": {
-									"type": `${sendAction()}`,
-									"label": "action",
-									"uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
-								}
+								"action": actionSetting(actionTxt)
 							}
 						]
 					}
@@ -193,11 +161,7 @@ async function sendShare_Ladder() {
 						"size": "full",
 						"aspectRatio": "20:13",
 						"aspectMode": "cover",
-						"action": {
-							"type": `${sendAction()}`,
-							"uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
-						}
+						"action": actionSettingII()
 					},
 					"body": {
 						"type": "box",
@@ -230,12 +194,7 @@ async function sendShare_Ladder() {
 								]
 							}
 						],
-						"action": {
-							"type": `${sendAction()}`,
-							"label": "action",
-							"uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
-						}
+						"action": actionSetting(actionTxt)
 					},
 					"footer": {
 						"type": "box",
@@ -250,23 +209,13 @@ async function sendShare_Ladder() {
 								"type": "button",
 								"style": "link",
 								"height": "sm",
-								"action": {
-									"type": `${sendAction()}`,
-									"label": "開啟爬梯子遊戲",
-									"uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
-								}
+								"action": actionSetting(ladderTxtI)
 							},
 							{
 								"type": "button",
 								"style": "link",
 								"height": "sm",
-								"action": {
-									"type": `${sendAction()}`,
-									"label": "查看全部結果",
-									"uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
-								}
+								"action": actionSetting(ladderTxtII)
 							},
 							{
 								"type": "separator"
@@ -323,11 +272,7 @@ async function sendShare_Pay() {
 						"size": "full",
 						"aspectRatio": "20:13",
 						"aspectMode": "cover",
-						"action": {
-							"type": `${sendAction()}`,
-							"uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
-						},
+						"action": actionSettingII(),
 						"position": "relative"
 					},
 					"body": {
@@ -339,12 +284,7 @@ async function sendShare_Pay() {
 								"text": "LINE Pay",
 								"weight": "bold",
 								"size": "xs",
-								"action": {
-									"type": `${sendAction()}`,
-									"label": "action",
-									"uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
-								}
+								"action": actionSetting(actionTxt)
 							},
 							{
 								"type": "text",
@@ -352,12 +292,7 @@ async function sendShare_Pay() {
 								"size": "xs",
 								"contents": [],
 								"color": "#8E8E8E",
-								"action": {
-									"type": `${sendAction()}`,
-									"label": "action",
-									"uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
-								}
+								"action": actionSetting(actionTxt)
 							},
 							{
 								"type": "button",
@@ -366,22 +301,12 @@ async function sendShare_Pay() {
 								"height": "sm",
 								"margin": "lg",
 								"color": "#F0F0F0",
-								"action": {
-									"type": `${sendAction()}`,
-									"label": "瞭解更多",
-									"uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
-								},
+								"action": actionSetting(payTxt),
 								"scaling": true,
 								"offsetEnd": "none"
 							}
 						],
-						"action": {
-							"type": `${sendAction()}`,
-							"label": "action",
-							"uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
-						}
+						"action": actionSetting(actionTxt)
 					},
 					"footer": {
 						"type": "box",
@@ -410,12 +335,7 @@ async function sendShare_Pay() {
 								"offsetTop": "xs"
 							}
 						],
-						"action": {
-							"type": `${sendAction()}`,
-							"label": "action",
-							"uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
-						},
+						"action": actionSetting(actionTxt),
 						"position": "relative"
 					},
 					"styles": {
@@ -464,12 +384,7 @@ async function Red_Env() {
 						"size": "full",
 						"aspectRatio": "20:13",
 						"aspectMode": "cover",
-						"action": {
-							"type": `${sendAction()}`,
-							"label": "action",
-							"uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
-						}
+						"action": actionSetting(actionTxt)
 					},
 					"body": {
 						"type": "box",
@@ -481,12 +396,7 @@ async function Red_Env() {
 								"weight": "bold",
 								"size": "sm",
 								"color": "#000000",
-								"action": {
-									"type": `${sendAction()}`,
-									"label": "action",
-									"uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
-								}
+								"action": actionSetting(actionTxt)
 							},
 							{
 								"type": "text",
@@ -494,12 +404,7 @@ async function Red_Env() {
 								"size": "xs",
 								"wrap": true,
 								"offsetTop": "md",
-								"action": {
-									"type": `${sendAction()}`,
-									"label": "action",
-									"uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
-								}
+								"action": actionSetting(actionTxt)
 							}
 						]
 					},
@@ -514,12 +419,7 @@ async function Red_Env() {
 							{
 								"type": "button",
 								"style": "link",
-								"action": {
-									"type": `${sendAction()}`,
-									"label": "查看紅包狀態",
-									"uri": `${sendUri()}`,
-									"message":`${sendMessage()}`
-								},
+								"action": actionSetting(redTxt),
 								"margin": "none"
 							},
 							{
