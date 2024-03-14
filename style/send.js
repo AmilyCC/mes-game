@@ -28,7 +28,7 @@ function initContent(type) {
 
 
 function InputExist(){    
-    if((sendType() == 'choose') && nowInput() == ''){
+    if((sendType() == 'choose')){
         alert('選擇傳送訊息類型');
         return false;
     }else if((sendType() == 'text') && nowInput() == ''){
