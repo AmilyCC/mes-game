@@ -16,13 +16,15 @@ function initContent(type) {
     let imageLink = document.getElementById('imageLink')
     userInput.value = ''
     if (type == "text") {
-        imageLink.style.display = "none"
-        userInput.placeholder = '輸入欲傳送文字'
-        userInput.type = 'text'
+        userInput.style.display = "block";
+        imageLink.style.display = "none";
+        userInput.placeholder = '輸入欲傳送文字';
+        userInput.type = 'text';
     } else{
-        imageLink.style.display = "block"
-        userInput.placeholder = '輸入欲傳送圖片網址'
-        userInput.type = 'url'
+        userInput.style.display = "block";
+        imageLink.style.display = "block";
+        userInput.placeholder = '輸入欲傳送圖片網址';
+        userInput.type = 'url';
     } 
 }
 
